@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="we.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;500;600&family=Oswald:wght@300;500;700&family=Playfair+Display:wght@400;500&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+  <div class="container" id="result" style="background-color:rgb(30, 151, 199);width: 395px; height: 800px;">
+    <div class="row">
+      <div class="col">
+        <img src="logoo - Copy.png" style="width:100px;margin-top: 15px;" alt="icon">
+      </div>
+      <div class="col" id="refresh">
+        <form action="">
+          <input type="search" required id="in" placeholder="enter the city">
+          <i class="fa fa-search" id="searchIcon" style="cursor: pointer;"></i>
+
+        
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+    
+
+    <div >
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col" style="color: white;font-family: 'Roboto';">Date:</div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col" style="color: white;font-family: 'Roboto';">Time:</div>
+      </div>
+
+<!-- font-family: 'Kanit', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; -->
+
+
+      <div class="row">
+        <ul>
+          <li class="tem">
+            <h3 style=" color:red; font-size: 50px;">CITY</h3>
+          </li>
+          <li class="tem"><img src="Screenshot_2023-10-16_215025-removebg-preview.png" alt=""></li>
+          <br>
+          <li class="tem">
+            <h1 style=" color:aqua; font-size: 40px;">0°C</h1>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="row" id="com">
+        <div class="col">
+          <ul>
+            <li class="compoen" style="font-family: 'Kanit';color: whitesmoke;"> <img src="presurelogo.png" style="width: 20px;" alt=""> HUMIDITY: <span></span></li>
+            <li class="compoen" style="font-family: 'Kanit'; color: whitesmoke;"> <img src="humiditylogo.png" style="width: 20px;" alt="">PRESSURE:</li>
+          </ul>
+        </div>
+        <div class="col">
+          <li class="comp"  style="font-family: 'Kanit';color: whitesmoke;"><i class="fa-solid fa-globe" style="color:white;"></i> COUNTRY:</li>
+          <li class="comp"  style="font-family: 'Kanit';color: whitesmoke;"> <img src="ff-removebg-preview.png" style="width: 20px;height: 20px;" alt="">CLIMATE:</li>
+        </div>
+
+      </div>
+
+<!-- rgba(173, 216, 230, 1)  
+rgba(0, 0, 0, 0.638) -->
+      <span>
+        <h1 style=" display: flex; justify-content: center; font-family: 'Roboto';color: rgba(75, 0, 130, 0.638);">Forecast </h1>
+      </span>
+
+      <div class="row" id="forca">
+
+        <div class="col" id="forca1">
+          <div class="forcast" style="color:green;background-color:rgba(173, 216, 230, 1);">
+            <h6 style="padding: 10px;">Day,date</h6>
+            <li><img src="Screenshot_2023-10-16_215025-removebg-preview.png" width="50px" alt="">
+              <h6>45°C</h6>
+            </li>
+
+            <h6 style="padding-left: 15px;">Climate</h6>
+          </div>
+        </div>
+
+        <div class="col" id="forca2">
+          <div class="forcast" style="color:green;background-color:rgba(173, 216, 230, 1);">
+            <h6 style="padding: 10px;">Day,date</h6>
+            <li><img src="Screenshot_2023-10-16_215025-removebg-preview.png" width="50px" alt="">
+              <h6>45°C</h6>
+            </li>
+
+            <h6 style="padding-left: 15px;">Climate</h6>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="we1.js"></script>
+
+</html>
